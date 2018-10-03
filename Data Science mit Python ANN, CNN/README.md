@@ -12,7 +12,7 @@ Als Ergebnis sollst du bekommen die folgende Information: Python .... |Anaconda 
 
 3. Du sollst auch die Daten herunterladen. Die Deten findest du hier im Repo in den Folder ANN und CNN.
 
-## B.Installation Theano, TensorFlow und Keras
+## B. Installation Theano, TensorFlow und Keras
 
 **Für Mac users:**
 Gib in terminal oder in Anaconda Prompt die folgenden Befehle:
