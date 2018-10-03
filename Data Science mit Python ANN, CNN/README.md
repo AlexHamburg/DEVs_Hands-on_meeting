@@ -3,11 +3,11 @@ Vorbereitung:
 *A. Install Python and Anaconda*
 
 1. Installieren Python und Anaconda: https://www.anaconda.com/download/
-1a. Wähl dein Betriebsystem aus (Windows, OS oder Linux)
-1b. Drück auf "Download" unter dem "Python 3.7 version"
-1c. Schließ das Fenster "Get Started with the Anaconda Cheat Sheet"
+1a. WÃ¤hl dein Betriebsystem aus (Windows, OS oder Linux)
+1b. DrÃ¼ck auf "Download" unter dem "Python 3.7 version"
+1c. SchlieÃŸ das Fenster "Get Started with the Anaconda Cheat Sheet"
 
-2. Prüf ob alles gut installiert wurde: schreib in Anaconda Prompt (du findest das im Windows-Menü unter "Anaconda 3") python.
+2. PrÃ¼f ob alles gut installiert wurde: schreib in Anaconda Prompt (du findest das im Windows-MenÃ¼ unter "Anaconda 3") python.
 Als Ergebnis sollst du bekommen die folgende Information: Python .... |Anaconda custom <64-bit>...
 
 3. Du sollst auch die Daten herunterladen. Die Deten findest du hier: 
