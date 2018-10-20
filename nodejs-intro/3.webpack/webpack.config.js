@@ -2,7 +2,7 @@ module.exports = {
     devServer: {
         contentBase: "./public",
         hot: true,
-        port: 9020,
+        port: 3000,
         historyApiFallback: true
     },
     entry: {
@@ -27,6 +27,5 @@ module.exports = {
         extensions: [".js", "jsx", ".ts", ".tsx"]
     },
 
-    mode:"development"
+    mode: "development"
 };
-
