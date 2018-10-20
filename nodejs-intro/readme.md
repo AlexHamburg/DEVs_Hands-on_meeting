@@ -55,11 +55,15 @@
   map, forEach, reduce, filter ,sort
 
 - es6
+
   - let, const , var // scopes
   - lamda: ()=> {}
   - Promise, async /await
   - object spredding {...{}, name }, let { name } = { name:1 }
   - array spredding [...{}, name ], let [ name , ...array2 ] = [ 1,2,3 ]
+
+- dom
+  ?
 
 # Part 2 : lets Code
 
