@@ -1,3 +1,9 @@
+# installl depenedency
+
+    npm install
+    /* or */
+    npm i
+
 # - Exerciese 2: server with express
 
 - run dummy server with express

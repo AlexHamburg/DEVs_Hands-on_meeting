@@ -64,15 +64,7 @@
 
 ### - Exerciese 2: server with express
 
-### - Exerciese 3: IO
-
-- io / synrocnious
-
-### - Exerciese 4: IO
-
-- IO : asyncronius
-  - Promises
-  - async / await
+### - Exerciese 3 - 4 : IO
 
 ### - Exerciese 5: Fetch in Browser
 
