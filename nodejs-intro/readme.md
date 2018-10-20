@@ -51,6 +51,9 @@
 - es5
 - "use strict" // aplies optimization and better typings
 
+- array:
+  map, forEach, reduce, filter ,sort
+
 - es6
   - let, const , var // scopes
   - lamda: ()=> {}

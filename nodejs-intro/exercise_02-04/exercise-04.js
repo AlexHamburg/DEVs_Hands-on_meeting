@@ -2,33 +2,29 @@ const express = require('express');
 const app = express();
 const path = require("path");
 const {
-    readfile
+    readFile
 } = require("fs");
+
+app.get("/sucsses", (_, res) => res.send("you are admin"));
+
+app.get("/fail", (_, res) => res.send("something gone wrong"));
 
 app.get("/admin", function (req, res) {
     const filePath = path.join(__dirname, "tocken.txt");
 
-    const Secrettocken = readfile(filePath, 'utf8', file => {
-        JSON.parse(file)
+    readFile(filePath, 'utf8', (error, file) => {
+
+        const Secrettocken = JSON.parse(file);
+
         const inputTocken = req.query.tocken;
         const redirectPath = inputTocken == Secrettocken ? "/sucsses" : "/fail";
+        console.log(redirectPath, inputTocken);
         res.status(201);
         res.redirect(redirectPath)
     });
 });
 
 
-/** 
- *  TODO: 3.3 write success and Fail page
- */
-app.get("/sucsses", function (req, res) {
-    res.send("you are admin")
-});
 
-/** 
- *  TODO: 3.4 write success and Fail page
- */
-app.get("/fail", function (req, res) {
-    res.send("something gone wrong")
-});
+
 app.listen(3000);
