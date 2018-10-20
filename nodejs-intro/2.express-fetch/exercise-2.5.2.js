@@ -37,18 +37,14 @@ app.get("/register", async ({
 
         })
 
+
         const {
             error
         } = await responce.json();
 
-
-
-        if (error) {
-            /**
-             *  TODO: handle errors   
-             */
-            throw new Error(error);
-        }
+        /**
+         *  TODO: handle errors   
+         */
 
         res.status(201);
         res.redirect("/success");

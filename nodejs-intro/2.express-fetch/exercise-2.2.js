@@ -26,16 +26,16 @@ app.get("/admin", function (req, res) {
 /** 
  *  TODO: 3 write success and Fail page
  */
-app.get("/sucsses", function (req, res) {
-    res.send("you are admin")
-});
+app.get("", () => {
+
+})
 
 /** 
  *  TODO: 4 write success and Fail page
  */
-app.get("/fail", function (req, res) {
-    res.send("something gone wrong")
-});
+app.get("", () => {
+
+})
 
 
 /**
@@ -43,20 +43,16 @@ app.get("/fail", function (req, res) {
  */
 app.get("/files/*", function (req, res) {
 
-    const filePath = path.join(__dirname + req.path)
-    res.sendFile(filePath);
+    res.sendFile(path.join(__dirname + ""));
 
 });
 
 /**
  * TODO: 6 in returns page 404 with text page not found and header 404
  */
-app.get("/*", function (req, res) {
+app.get("/*", (req, res) => {
     const message = "Page not found"
 
-    res.status(404);
-    res.setHeader("title", message)
-    res.send(message)
 });
 
 app.listen(3000);
