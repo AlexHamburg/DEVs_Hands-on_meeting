@@ -3,7 +3,7 @@ const app = express();
 const fetch = require("node-fetch");
 const {
     read
-} = require("./promise-tool");
+} = require("./myIO");
 
 app.get("/success", (_, res) => res.send("just Registered"));
 app.get("/fail", (_, res) => res.send("something gone wrong"));

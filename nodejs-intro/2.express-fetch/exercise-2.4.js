@@ -1,9 +1,8 @@
 const express = require("express");
 const app = express();
 const {
-    read,
     write
-} = require("./promise-tool");
+} = require("./myIO");
 /**
  * TODO: write bookmark service on endpoint: http://localhost:8080/bookmark-service
  */

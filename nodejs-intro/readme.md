@@ -75,14 +75,6 @@
 
 ### - Exerciese 5: Fetch in Browser
 
-- callback
-  - callback hall
-- promise chain
-  - then
-  - catch
-- async await
-- try { } catch(e){ }
-
 ### - Exerciese 6: DOM
 
     var element = document.createElement("header");

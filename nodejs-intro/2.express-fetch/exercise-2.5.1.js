@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const {
     read,
     write
-} = require("./promise-tool");
+} = require("./myIO");
 
 app.use(bodyParser.urlencoded({
     extended: false

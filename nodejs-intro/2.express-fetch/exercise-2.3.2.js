@@ -4,7 +4,7 @@ const path = require("path");
 const {
     read,
     write
-} = require("./promise-tool");
+} = require("./myIO");
 
 app.get("/success", (_, res) => res.send("you are admin"));
 app.get("/fail", (_, res) => res.send("something gone wrong"));
