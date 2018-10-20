@@ -13,5 +13,7 @@
     "fetch": "^1.1.0",
     "node-fetch": "^2.2.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "body-parser": "^1.18.3"
+  }
 }
