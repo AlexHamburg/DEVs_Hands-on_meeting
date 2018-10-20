@@ -1,0 +1,42 @@
+{
+  "name": "intro-react",
+  "version": "0.0.0",
+  "description": "Intro of Typescript react",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "test": "",
+    "start": "webpack-dev-server --hot --inline"
+  },
+  "devDependencies": {
+    "ts-loader": "^4.4.1",
+    "typescript": "^2.9.2",
+    "webpack": "^4.0.0",
+    "jest": "^23.5.0",
+    "ts-jest": "^23.1.3",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4",
+    "@types/jest": "^23.3.1"
+  },
+  "dependencies": {
+    "@types/react": "^16.3.14",
+    "@types/react-dom": "^16.0.5",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
