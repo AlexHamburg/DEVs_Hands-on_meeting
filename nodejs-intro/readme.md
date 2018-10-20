@@ -11,73 +11,17 @@
 
 # Part 1 :theory
 
-- access:
-
-  - browser: limited acces to files
-  - node: acces to files
-
-- Basic syntaxees
-
-  - primitive types:
-    - number
-    - string
-    - object : everything is hashMaps
-    - array: is mutable Object (hashMap)
-    - undefined | null
-
+- basics:
 - scopes
-
-  - global
-  - function
-  - es6 "use strict"
-
 - Syntaxes
-
-  - everything:
-    - is object 1.toString() but bad practice
-  - equeality:
-    - a == b: bed
-    - a === b: okey
-  - best practices:
-    - []
-    - {}
-
 - Paradigmas
-
-  - closure
-  - prototype
-  - currying
-
-- es5
-- "use strict" // aplies optimization and better typings
-
-- array:
-  map, forEach, reduce, filter ,sort
-
 - es6
-
-  - let, const , var // scopes
-  - lamda: ()=> {}
-  - Promise, async /await
-  - object spredding {...{}, name }, let { name } = { name:1 }
-  - array spredding [...{}, name ], let [ name , ...array2 ] = [ 1,2,3 ]
-
 - dom
-  ?
 
 # Part 2 : lets Code
 
-### - Exerciese 1: npm
+### - 1.npm
 
-### - Exerciese 2: server with express
+### - 2.express fetch
 
-### - Exerciese 3 - 4 : IO
-
-### - Exerciese 5: Fetch in Browser
-
-### - Exerciese 6: DOM
-
-    var element = document.createElement("header");
-    element.innerHTML = "<div> hello world </div>
-    document.appendChild(element);
-    element.addeventListener
+### - 3.webpack
