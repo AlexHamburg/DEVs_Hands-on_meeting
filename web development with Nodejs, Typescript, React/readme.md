@@ -74,7 +74,7 @@
   - Promises
   - async / await
 
-## Fetch in Browser:
+## Exercieses 5: Fetch in Browser
 
 - callback
   - callback hall
@@ -84,7 +84,7 @@
 - async await
 - try { } catch(e){ }
 
-## DOM
+## Exercieses 6: DOM
 
     var element = document.createElement("header");
     element.innerHTML = "<div> hello world </div>
