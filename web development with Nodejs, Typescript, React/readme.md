@@ -1,6 +1,6 @@
 # web development
 
-# part 1 :theory
+# Part 1 :theory
 
 - access:
 
@@ -49,9 +49,9 @@
   - object spredding {...{}, name }, let { name } = { name:1 }
   - array spredding [...{}, name ], let [ name , ...array2 ] = [ 1,2,3 ]
 
-# part 2 : practic
+# Part 2 : practic
 
-## Exercises 1
+## Exercieses 1: npm
 
 - theory: what is npm ?
 - practice:
@@ -60,7 +60,7 @@
   - exrpess
   - typescript
 
-## Exercise 2
+## Exercieses 2: server with express
 
 - run dummy server with express
 
