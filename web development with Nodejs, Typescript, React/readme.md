@@ -64,11 +64,11 @@
 
 - run dummy server with express
 
-## Exercieses 3
+## Exercieses 3: IO
 
 - io / synrocnious
 
-## Exercieses 4
+## Exercieses 4: IO
 
 - IO : asyncronius
   - Promises
