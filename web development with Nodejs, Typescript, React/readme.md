@@ -1,5 +1,14 @@
 # web development
 
+## requirments
+
+- install node.js : https://nodejs.org/en/download/
+
+# run in terminal:
+
+    npm -v
+    node
+
 # Part 1 :theory
 
 - access:
@@ -51,30 +60,21 @@
 
 # Part 2 : practic
 
-## Exercieses 1: npm
+### - Exerciese 1: npm
 
-- theory: what is npm ?
-- practice:
-  - npm init
-  - install dependencies
-  - exrpess
-  - typescript
+### - Exerciese 2: server with express
 
-## Exercieses 2: server with express
-
-- run dummy server with express
-
-## Exercieses 3: IO
+### - Exerciese 3: IO
 
 - io / synrocnious
 
-## Exercieses 4: IO
+### - Exerciese 4: IO
 
 - IO : asyncronius
   - Promises
   - async / await
 
-## Exercieses 5: Fetch in Browser
+### - Exerciese 5: Fetch in Browser
 
 - callback
   - callback hall
@@ -84,7 +84,7 @@
 - async await
 - try { } catch(e){ }
 
-## Exercieses 6: DOM
+### - Exerciese 6: DOM
 
     var element = document.createElement("header");
     element.innerHTML = "<div> hello world </div>
