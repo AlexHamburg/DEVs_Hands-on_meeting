@@ -7,21 +7,21 @@ const {
  * TODO: write bookmark service on endpoint: http://localhost:8080/bookmark-service
  */
 
-app.get( /** TODO: 5.1 */ "<your Path>", (req, res) => {
+app.get( /** TODO: 1 */ "<your Path>", (req, res) => {
 
     try {
 
-        if ( /* TODO: 5.2 if username dont exists*/ ) {
+        if ( /* TODO: 2 if username dont exists*/ ) {
             throw new Error("no user to check");
         }
 
-        const register = JSON.parse( /** TODO: 5.3 read file */ );
+        const register = JSON.parse( /** TODO: 3 read file */ );
 
         if (register.find(x => x === user)) {
             throw new Error("already registered");
         }
 
-        await write("./register.json", JSON.stringify( /* TODO: 5.4 updated user list  */ ));
+        await write("./register.json", JSON.stringify( /* TODO: 4 updated user list  */ ));
 
         res.status(201).send( /** succes message */ );
     } catch (err) {
@@ -31,4 +31,4 @@ app.get( /** TODO: 5.1 */ "<your Path>", (req, res) => {
     }
 });
 
-app.listen( /* TODO: set port */ );
+app.listen( /* TODO: 5 set port */ );
