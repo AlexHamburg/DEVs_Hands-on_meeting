@@ -58,7 +58,7 @@
   - object spredding {...{}, name }, let { name } = { name:1 }
   - array spredding [...{}, name ], let [ name , ...array2 ] = [ 1,2,3 ]
 
-# Part 2 : practic
+# Part 2 : lets Code
 
 ### - Exerciese 1: npm
 
