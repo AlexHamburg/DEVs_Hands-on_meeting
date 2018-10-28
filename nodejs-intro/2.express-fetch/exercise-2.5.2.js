@@ -8,6 +8,8 @@ const {
 app.get("/success", (_, res) => res.send("just Registered"));
 app.get("/fail", (_, res) => res.send("something gone wrong"));
 
+//   http://localhost:3000/register?tocken=1234567890&user=dato
+
 app.get("/register", async ({
     query: {
         user,
@@ -42,9 +44,9 @@ app.get("/register", async ({
             error
         } = await responce.json();
 
-        /**
-         *  TODO: handle errors   
-         */
+        if (error) {
+            throw new Error(error.message)
+        }
 
         res.status(201);
         res.redirect("/success");
