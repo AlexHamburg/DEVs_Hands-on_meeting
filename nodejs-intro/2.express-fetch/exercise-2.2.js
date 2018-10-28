@@ -16,7 +16,6 @@ app.get("/admin", function (req, res) {
 });
 
 
-
 app.get("/sucsses", (_, res) => {
     res.send("sucess");
 })
@@ -27,18 +26,12 @@ app.get("/fail", (_, res) => {
 })
 
 
-/**
- * TODO: 5 on every doamin: /files/job-01 returns text from files/job-01.txt
- */
 app.get("/files/*", function (req, res) {
 
     res.sendFile(path.join(__dirname, req.path));
 
 });
 
-/**
- * TODO: 6 in returns page 404 with text page not found and header 404
- */
 app.get("/*", (req, res) => {
     const message = "Page not found"
     res.status(404);
