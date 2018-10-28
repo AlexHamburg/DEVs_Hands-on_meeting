@@ -6,35 +6,24 @@ const fs = require("fs");
 app.get("/admin", function (req, res) {
     const filePath = path.join(__dirname, "tocken.txt");
 
-    /**
-     * TODO: 1 is it good idea to use syncronious readFile? why is it Bad?
-     */
+
     const Secrettocken = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
-    /**
-     * TODO: 2 find some js specific failure, why is it security risk?
-     *  what if tocken is empty?
-     */
     const inputTocken = req.query.tocken;
     const redirectPath = inputTocken == Secrettocken ? "/sucsses" : "/fail";
 
-    res.status(201);
     res.redirect(redirectPath)
 });
 
 
-/** 
- *  TODO: 3 write success and Fail page
- */
-app.get("", () => {
 
+app.get("/sucsses", (_, res) => {
+    res.send("sucess");
 })
 
-/** 
- *  TODO: 4 write success and Fail page
- */
-app.get("", () => {
 
+app.get("/fail", (_, res) => {
+    res.send("fail");
 })
 
 
@@ -43,7 +32,7 @@ app.get("", () => {
  */
 app.get("/files/*", function (req, res) {
 
-    res.sendFile(path.join(__dirname + ""));
+    res.sendFile(path.join(__dirname, req.path));
 
 });
 
@@ -52,7 +41,8 @@ app.get("/files/*", function (req, res) {
  */
 app.get("/*", (req, res) => {
     const message = "Page not found"
-
+    res.status(404);
+    res.send("not found");
 });
 
 app.listen(3000);

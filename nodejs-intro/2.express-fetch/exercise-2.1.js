@@ -1,18 +1,14 @@
 const express = require('express');
 const app = express();
 
-
-/**
- * TODO: 2.1 instead of hello world write path
- */
-app.get("/*", function (req, res) {
-    res.send("hello world")
+app.get("/insomnia", function (req, res) {
+    res.send("qwrqwrqwr");
 });
 
-/**
- * TODO: 2.2 on /insomnia send back
- * "keep calm and sleep" 
- * where you should write it before or after /* ?
- */
+
+app.get("/*", function (req, res) {
+    res.send(req.path)
+});
+
 
 app.listen(3000);

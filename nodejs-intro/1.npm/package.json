@@ -1,0 +1,11 @@
+{
+  "name": "davit",
+  "version": "1.0.0",
+  "description": "- theory: what is npm ? - practice:   - npm init   - install dependencies   - exrpess   - typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
