@@ -7,15 +7,18 @@
 
     number
     string
+    undefined | null
+
+## complex types :
+
     object : everything is hashMaps
     array: is mutable Object (hashMap)
-    undefined | null
 
 ## scopes
 
 - global
 - function
-- es5 "use strict"
+- es5 "use strict" , let var const
 
 ## syntaxes
 
@@ -47,14 +50,15 @@ map, forEach, reduce, filter ,sort
 - object spredding
 
   - {...{}, name },
-  - let { name } = { name:1 }
 
-- array spredding
+* let { name } = { name:1 }
+
+* array spredding
 
   - [...{}, name ],
   - let [ name , ...array2 ] = [ 1,2,3 ]
 
-- classes
+* classes
 
 # dom
 
